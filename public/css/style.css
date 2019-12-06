@@ -1,0 +1,15 @@
+:root {
+  --bkg-lt: #F5F5F5;
+  --txt: #333333;
+  --accent: #665E66;
+  --lora: 'Lora', serif;
+  --nunito: 'Nunito Sans', sans-serif;
+}
+body {
+  background: var(--bkg-lt);
+  font-family: var(--nunito);
+  color: var(--txt);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--lora);
+}
