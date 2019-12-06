@@ -1,9 +1,16 @@
 :root {
   --bkg-lt: #F5F5F5;
+  --bkg-dim: #C1C1C1;
+  --mid: #A1A1A1;
   --txt: #333333;
   --accent: #665E66;
   --lora: 'Lora', serif;
   --nunito: 'Nunito Sans', sans-serif;
+  --hvr: all .35s ease-in-out;
+}
+:root {
+  font-size: 15px;
+  line-height: 1.3;
 }
 body {
   background: var(--bkg-lt);
@@ -11,5 +18,68 @@ body {
   color: var(--txt);
 }
 h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0.25em;
+  padding-bottom: 0;
   font-family: var(--lora);
+}
+p {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.las {
+  padding-right: .5em;
+  padding-left: .5em;
+}
+.site-header {
+  background: var(--accent);
+  padding: 1.25em 4em;
+  display: flex;
+  justify-content: space-between;
+  color: var(--bkg-lt);
+}
+@media screen and (max-width: 550px) {
+  .site-header {flex-direction: column;}
+}
+.site-header h1 {
+
+}
+.name p {
+  color: var(--bkg-dim);
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact a {
+  padding: .25em 1em;
+  color: var(--mid);
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px 1px transparent;
+  transition: var(--hvr);
+}
+.contact a p, .contact a i {
+  color: var(--bkg-dim);
+  transition: var(--hvr);
+}
+.contact a:hover {
+  box-shadow: 0px 0px 0px 1px var(--bkg-lt);
+}
+.contact a:hover p, .contact a:hover i {
+  color: var(--bkg-lt);
+}
+.contact a p {
+  width: 100%;
+  font-size: .8rem;
+}
+.contact a i {
+  margin-right: .5em;
 }
