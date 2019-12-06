@@ -11,6 +11,9 @@
 .runtimeconfig.json
 .firebase/
 
+### Binary Images ###
+bin-img/
+
 ### macOS ###
 # General
 .DS_Store
